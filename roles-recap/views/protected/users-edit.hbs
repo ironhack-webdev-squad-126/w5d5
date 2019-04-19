@@ -1,0 +1,11 @@
+{{#each users}}
+<p>{{username}}
+    <form action="/users/edit/{{_id}}" method="post">
+        <select name="role">
+            <option value="guest">Guest</option>
+            <option value="mod">Moderator</option>
+        </select>
+        <button type="submit">Edit</button>
+    </form>
+</p>
+{{/each}}
